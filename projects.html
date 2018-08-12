@@ -63,7 +63,28 @@ void setup()
     pinMode(LED2, OUTPUT);
     pinMode(LED3, OUTPUT);
 }
-                          
+void loop()
+{
+  digitalWrite(LED3, HIGH);
+    delay(GREENTIME);
+    digitalWrite(LED3, LOW);
+    delay(300);
+    for(int i = 0 ; i < 3; i++)
+    {
+      digitalWrite(LED3, HIGH); 
+      delay(500);
+      digitalWrite(LED3, LOW);
+      delay(500);
+    }
+    digitalWrite(LED2, HIGH);
+    delay(2000);
+    digitalWrite(LED2, LOW);
+    delay(300);
+    digitalWrite(LED1, HIGH);
+    delay(5000);
+    digitalWrite(LED1, LOW);
+    delay(300);
+}
                     </code></pre>
                     
             </div>
